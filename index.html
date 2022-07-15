@@ -19,17 +19,20 @@
 
     <div class="main__container">
       <textarea
+        placeholder="write the text to be translated into dothraki"
         class="txt__translate"
         name="txt__translate"
         id="txt__translate"
         cols="5"
-        rows="5"
+        rows="3"
       ></textarea>
-      <button class="translate__button">Translate</button>
+      <button id="translate__button" class="translate__button">
+        Translate
+      </button>
     </div>
     <div class="output__container">
-      <p class="output__txt">Output will be shown here</p>
-      <div class="output"></div>
+      <p class="output__txt">Output will be shown here -</p>
+      <div id="output" class="output"></div>
     </div>
     <script src="app.js"></script>
   </body>

@@ -1,7 +1,9 @@
 body {
-  background-color: white;
+  background-color: rgb(14, 14, 14);
   margin: 0;
   padding: 0;
+  color: aqua;
+  width: 100vw;
 }
 
 * {
@@ -10,14 +12,20 @@ body {
 }
 
 nav {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
   display: flex;
   flex-direction: row;
   height: 10rem;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  width: 100%;
-  background-color: rgba(247, 221, 76, 0.534);
+
+  background-color: rgb(10, 10, 10);
+  color: aqua;
+  border: solid 0.4rem aqua;
+  box-shadow: 0.1rem 0.3rem 3rem aqua, inset 0rem 0rem 1.8rem aqua;
 }
 
 .translate__img {
@@ -25,24 +33,78 @@ nav {
 }
 
 .translate__heading {
-  height: 6rem;
-  text-transform: uppercase;
+  font-size: 3rem;
+
   text-align: center;
-  font-family: cursive;
+  font-family: monospace;
+
+  text-shadow: 0.2rem 0.2rem 0.6rem aqua;
 }
 
 .main__container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 5rem;
+  padding: 2rem;
 
   align-items: center;
   justify-content: center;
 }
 
+.translate__button {
+  color: aqua;
+  background-color: black;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: monospace;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+
+  transition: border 0.2s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.translate__button:hover {
+  border: 0.1rem solid aqua;
+  box-shadow: 0.1rem 0.1rem 1rem aqua;
+}
+
 .txt__translate {
-  color: white;
-  background-color: rgba(247, 221, 76, 0.534);
+  color: aqua;
+  font-weight: 500;
+  font-family: monospace;
+  font-size: 1.2rem;
+
+  background-color: black;
+  border: 0.1rem aqua solid;
   width: 50%;
+  padding: 1rem;
+
+  text-align: center;
+}
+
+.output__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.output__txt {
+  text-align: center;
+  font-family: monospace;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+.output {
+  height: 8rem;
+  width: 50%;
+  border: 0.1rem aqua solid;
+  box-shadow: 0.1rem 0.1rem 1.5rem aqua, inset 0rem 0rem 1.8rem aqua;
+  border-radius: 0.8rem;
+  font-family: monospace;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
 }
