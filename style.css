@@ -1,0 +1,48 @@
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  height: 10rem;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  background-color: rgba(247, 221, 76, 0.534);
+}
+
+.translate__img {
+  height: 6rem;
+}
+
+.translate__heading {
+  height: 6rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: cursive;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5rem;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.txt__translate {
+  color: white;
+  background-color: rgba(247, 221, 76, 0.534);
+  width: 50%;
+}

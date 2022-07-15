@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dothraki Translator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <img
+        class="translate__img"
+        src="assets/translate.svg"
+        alt="translate image"
+      />
+      <h1 class="translate__heading">Dothraki Translator</h1>
+    </nav>
+
+    <div class="main__container">
+      <textarea
+        class="txt__translate"
+        name="txt__translate"
+        id="txt__translate"
+        cols="5"
+        rows="5"
+      ></textarea>
+      <button class="translate__button">Translate</button>
+    </div>
+    <div class="output__container">
+      <p class="output__txt">Output will be shown here</p>
+      <div class="output"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
